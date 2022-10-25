@@ -1,15 +1,7 @@
 import React from "react";
-import Spacer from "../../components/common/spacer/spacer";
-import Post from "../components/post/post";
 
 const HomePage = () => {
-  return (
-    <>
-      <Spacer />
-      <Post />
-      <Spacer />
-    </>
-  );
+  return <div>HomePage</div>;
 };
 
 export default HomePage;

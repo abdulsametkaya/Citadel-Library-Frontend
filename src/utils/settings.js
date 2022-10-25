@@ -1,7 +1,7 @@
 export const settings = {
-  apiURL: "",
-  siteName: "",
-  siteUrl: "",
+  apiURL: "https://citadel-library.herokuapp.com/",
+  siteName: "Citadel Library",
+  siteUrl: "www.citadel-library.com",
   email: "info@citadel.com",
   phone1: "(609)-203-0117",
   phone2: "(609)-218-9912",
