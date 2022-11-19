@@ -1,0 +1,105 @@
+@use "../../../../assets/scss/variables" as v;
+@use "../../../../assets/scss/mixins" as m;
+
+.user-menu {
+
+  button {
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: v.$color3;
+    background: none !important;
+    border-radius: 0;
+
+    &:hover {
+      color: v.$color3;
+      background: v.$color1 !important;
+      transition: all .5s;
+    }
+
+    @media (max-width: 991px) {
+      border: none;
+      padding: 0;
+      font-weight: 500;
+      color: v.$color1;
+      display: block;
+      text-align: left;
+
+      &:hover {
+        background: none !important;
+        color: v.$color3;
+        transition: all .5s;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    color: v.$color2;
+    border-radius: 0;
+    border-color: v.$color1;
+    background-color: v.$color2;
+    transition: all 1s;
+
+    .dropdown-divider {
+      background-color: v.$color1;
+      margin: 0;
+    }
+
+    @media (max-width: 991px) {
+      position: static;
+      border: none;
+      margin: 0;
+      padding: 0;
+      background: none;
+    }
+  }
+
+  .dropdown-item {
+    color: v.$color3;
+    padding: 1rem 2rem;
+
+    svg{
+      font-size: 1rem;
+      margin-right: 1rem;
+      color: v.$color1;
+    }
+    
+    &:hover {
+      background: v.$color1 !important;
+      color: v.$color3;
+      border-radius: 0 !important;
+
+          svg{
+      color: v.$color2;
+    }
+      transition: all 1s;
+    }
+  }
+}
+.modal-body {
+  padding: 2rem !important;
+  ul {
+    @include m.flexbox(row, flex-start, flex-start, 1.5rem);
+  }
+  .nav-tabs {
+    --bs-nav-tabs-link-active-border-color: #ffc000 #ffc000 #ffc000;
+    --bs-nav-tabs-border-width: 0.1rem;
+    --bs-nav-tabs-border-color: #ffc000;
+    .nav-link {
+      padding: 0.7rem;
+    }
+  }
+}
+input {
+  padding: 0.7rem;
+}
+
+.modal-header {
+  background-color: v.$color1;
+  .modal-title {
+    .btn-close:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "../../../../assets/scss/variables" as v;
+
+.main-navbar {
+  background: linear-gradient(rgb(22, 22, 22), rgba(67, 66, 66, 0));
+  z-index: 20;
+
+  .nav-link {
+    color: v.$color3;
+
+    &::after {
+      content: "|";
+      font-weight: 200;
+      margin-left: 1rem;
+      color: rgba(255, 255, 255, 0.618);
+    }
+    &:last-child::after {
+      content: "";
+    }
+  }
+  img {
+    width: 20vh;
+    height: auto;
+  }
+
+  .navbar-toggler {
+    border-color: v.$color1;
+    border-width: 0.1rem;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.618)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+.background-image {
+  background: linear-gradient(
+    rgb(72, 85, 99, 0.9),
+    rgb(41, 50, 60, 0.6)
+  ) !important;
+}

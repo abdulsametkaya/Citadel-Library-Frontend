@@ -1,0 +1,76 @@
+@use "../../../../assets/scss/variables" as x;
+@use "../../../../assets/scss/mixins" as y;
+
+.footer {
+    background-image: url("../../../../assets/img/social-media-icon/millikutuphane.png");
+    background-repeat: no-repeat;
+    background-color: x.$color2;
+    padding: 5rem 0;
+
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+  
+
+    img{
+        margin-bottom: 1rem;
+    }
+
+    ul{
+        @include y.reset-list();
+        @include y.flexbox(column, flex-start, flex-start, 1rem);
+        a{
+            color: rgba(207, 204, 204, 0.863);
+        }
+    }
+
+    .footer-logo{
+        width: 92%; 
+    }
+   .social-svg{
+    width: 80%!important;
+    height: 80%!important;
+   }
+   .social-media{
+    svg {
+        font-size: 3rem;
+    }
+   }
+
+    h2{
+        font-weight: 700;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        color: x.$color3;
+    }
+    .copyBar {
+       text-align: center;
+       font-size: .7rem;
+       margin-top: 2rem;
+       border-top: 1px solid rgba(207, 204, 204, 0.863);
+       padding-top: 1.2rem;
+       margin-bottom: -2rem;
+       color: rgba(207, 204, 204, 0.863);
+      }
+     .g-87{
+        color: rgba(207, 204, 204, 0.863);
+        text-align: justify;
+        padding-right: 2rem;
+        padding-top: 1.5rem;
+     }
+     .g1{
+        transition: transform 1s;
+
+        &:hover{
+           transform: rotate(720deg);
+
+        }
+        
+     }
+  }
+ 
+    
+    

@@ -1,0 +1,19 @@
+@use "../../../../assets/scss/variables" as v;
+.counter{
+   
+ .counter-number{
+  color:v.$color3;
+  font-size:4rem;
+
+ }
+ .counter-bottom{
+  width:30%;
+  margin-left:auto;
+  margin-right: auto;
+ border-top: 0.2rem solid v.$color1;
+ }
+ .counter-text{
+  color:v.$color1;
+  font-weight:bold;
+ }
+}

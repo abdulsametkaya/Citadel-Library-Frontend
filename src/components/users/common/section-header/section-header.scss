@@ -1,0 +1,40 @@
+@use "../../../../assets/scss/variables" as v;
+
+.section-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+
+  .section-content {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    h1 {
+      color: v.$color1;
+      font-size: 5rem;
+      font-weight: 600;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: purple;
+    opacity: 0.2;
+  }
+}
