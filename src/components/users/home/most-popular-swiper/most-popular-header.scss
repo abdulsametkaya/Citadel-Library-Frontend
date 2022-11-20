@@ -1,0 +1,11 @@
+@use "../../../../assets/scss/variables" as v;
+
+.most-popular-header {
+  h4 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: v.$color2;
+    border-radius: 1rem;
+    padding: 1rem 0;
+  }
+}

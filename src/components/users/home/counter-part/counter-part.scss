@@ -1,0 +1,13 @@
+@use "../../../../assets/scss/variables" as v;
+.counter-part {
+ background-image:url("../../../../assets/img/section-header/bg1.jpg");
+ background-repeat:no-repeat;
+ background-size: cover;
+ padding:4rem 0;
+ 
+
+ .counter-col{
+  text-align: center;
+ 
+ }
+}

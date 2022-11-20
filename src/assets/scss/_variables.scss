@@ -1,8 +1,9 @@
-$color1: #ffce66;
-$color2: #f9ab40;
-$color3: #a9e5d5;
-$color4: rgba(68, 69, 91, 0.19);
-$color5: rgba(255, 96, 48, 0.503);
+$color1: #ffc000;
+$color2: #434242;
+$color3: #ffffff;
+$color4: rgba(67, 66, 66, 0.19);
+$color5: #ffbf008b;
+$color6: rgb(255, 255, 255, 0.4);
 
 /*BOOTSTRAP*/
 $primary: $color1;
@@ -16,10 +17,5 @@ $input-btn-padding-y: 1rem;
 $input-btn-padding-x: 2rem;
 $btn-link-color: white;
 
-/* SWEET ALERT */
-$swal2-confirm-button-background-color: $color1;
-$swal2-cancel-button-background-color: $color2;
-$swal2-question: $color1;
-
-/* SWIPER */
-$themeColor: $color1;
+/* SWIPER*/
+$themeColor: $color1 !important;

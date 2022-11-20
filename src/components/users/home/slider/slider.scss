@@ -1,0 +1,48 @@
+@use "../../../../assets/scss/mixins" as y;
+
+.slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-height: 60vh;
+
+  img {
+    height: 60vh;
+    width: 100vw;
+    max-height: 60vh;
+  }
+
+  .carousel-caption {
+    text-align: center;
+    @include y.flexbox(column, center, center, 1rem);
+    height: 50vh;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      @media (max-width: 768px) {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    button {
+      display: none;
+    }
+  }
+}
+
+.position-block {
+  @media (max-width: 768px) {
+    position: block !important;
+  }
+}
