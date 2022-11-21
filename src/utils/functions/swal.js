@@ -11,8 +11,9 @@ export const question = (title, text = "") => {
 
 export const toast = (title, icon = "info") => {
   // success | warning | question | error | info
+
   return Swal.fire({
-    position: "top-end",
+    position: "top-center",
     icon,
     title,
     showConfirmButton: false,
