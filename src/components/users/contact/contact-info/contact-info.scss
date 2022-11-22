@@ -1,0 +1,13 @@
+@use "../../../../assets/scss/mixins" as m;
+@use "../../../../assets/scss/variables" as x;
+
+.contact-info {
+  @include m.reset-list();
+  @include m.flexbox(column, flex-start, flex-start, 1rem);
+  color: rgba(207, 204, 204, 0.863);
+  svg {
+    color: x.$color1;
+    font-size:1.2rem;
+    
+  }
+}

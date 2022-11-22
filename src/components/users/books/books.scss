@@ -1,0 +1,44 @@
+@use "../../../assets/scss/mixins" as y;
+@use "../../../assets/scss/variables" as v;
+
+.books {
+  @include y.flexbox(column, center, center, 4rem);
+
+  .filter-menu {
+    border: 1px solid v.$color1;
+    border-radius: 2rem;
+    width: 80%;
+    margin-right: 4rem;
+    margin-left: 4rem;
+
+    .form-control {
+      padding: 1rem;
+    }
+  }
+
+  .book-cont {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 90%;
+
+    .book-col {
+      margin: 1rem 0;
+    }
+    
+  }
+  .book-cont::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  .book-cont::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  .book-cont::-webkit-scrollbar-thumb {
+    background: v.$color4;
+    border-radius: 10px;
+  }
+  .book-cont::-webkit-scrollbar-thumb:hover {
+    background: v.$color1;
+  }
+}
