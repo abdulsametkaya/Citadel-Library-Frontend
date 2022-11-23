@@ -1,0 +1,65 @@
+@use "../../../assets/scss/variables" as v;
+
+.publisher-search{
+  .form-control {
+    border: 2px solid #ced4da !important;
+    box-shadow: 0 0 0.5rem 0.1rem grey;
+  }
+  .publisher-add-btn {
+  .btn {
+    background-color: white;
+    color: v.$color1;
+    border: 0.1rem solid v.$color1;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: v.$color1;
+      color: v.$color2;
+    }
+  }
+}
+ }
+
+
+ .publisher-table {
+  box-shadow: 0 0 0.5rem 0.2rem grey;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-right: 0.5rem solid v.$color1;
+
+  .rdt_TableRow {
+    .pub-edit-btn {
+      padding: 0.4rem 1.5rem;
+      border-radius: 0.8rem;
+    }
+
+    .pub-del-btn {
+      padding: 0.4rem 1.2rem;
+      border-radius: 0.8rem;
+      background-color: white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #dc3545;
+        color: v.$color2;
+
+        svg {
+          color: white;
+        }
+      }
+
+      svg {
+        color: #dc3545;
+      }
+    }
+  }
+
+  .rdt_TableHeadRow {
+    font-weight: bold;
+  }
+}
