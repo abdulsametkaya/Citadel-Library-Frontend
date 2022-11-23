@@ -1,0 +1,39 @@
+@use "../../../../assets/scss/variables" as v;
+@use "../../../../assets/scss/mixins" as m;
+
+.dash-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  @media (max-width: 576px) {
+    width: 80% !important;
+    img {
+      width: 15vw !important;
+    }
+  }
+
+  @media (max-width: 992px) {
+    height: 100vh;
+    align-items: flex-start !important;
+  }
+  @media (min-width: 992px) {
+    align-items: flex-start !important;
+  }
+
+  .reports-col-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    canvas {
+      width: auto !important;
+    }
+  }
+
+  .row {
+    box-shadow: 0 0 0.5rem 0.2rem grey;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border-right: 0.5rem solid v.$color1;
+    justify-content: center;
+  }
+}

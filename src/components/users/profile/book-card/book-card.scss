@@ -1,0 +1,82 @@
+@use "../../../../assets/scss/variables" as v;
+
+
+.book-list {
+ 
+  .card {
+    @media (max-width: 767px) {
+      margin-bottom: 13rem !important;
+      .card-title {
+        text-align: center;      }
+      .card-text-group {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    @media (max-width: 442px) {
+      font-size: 0.6rem;
+      margin-bottom: 10rem !important;
+      .card-body {
+        padding: 5px;
+      }
+      .card-title {
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 376px) {
+      font-size: 0.6rem;
+      margin-bottom: 10rem !important;
+      .card-body {
+        padding: 5px;
+      }
+      .card-title {
+        text-align: center;
+        font-size: 0.6rem;
+      }
+      .card-text-group {
+      display: flex;
+      justify-content: center;
+    }
+    }
+
+    border: none;
+    border-radius: 0px !important;
+    --bs-card-height: 80px;
+    font-size:10px;
+
+    svg {
+     margin-left: 1rem;
+      font-size: 0.8rem;
+      color: v.$color1;
+    }
+ 
+  }
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: auto;
+    padding: 0px;
+    margin: 0;
+    height: 90px !important;
+  }
+}
+
+.input-group{
+ margin-bottom: 1rem;
+.input-group-text {
+    background-color: v.$color1;
+    svg {
+      font-size: 1.5rem;
+      color: v.$color3;
+    }
+  }
+  .btn{
+   border-radius: 2rem;
+  }
+}
+
+

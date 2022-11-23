@@ -1,0 +1,47 @@
+@use "../../../../assets/scss/variables" as v;
+
+.topbar {
+  box-shadow: 0.1rem 0.1rem 0.3rem grey;
+  position: sticky;
+  background-color: v.$color3;
+  
+  .navbar-logo {
+    width: 12vw;
+    height: auto;
+  }
+  .topbar-toggle-btn {
+    background-color: v.$color3;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    --bs-btn-active-bg: v.$color3 !important;
+    &:hover {
+      background-color: v.$color3;
+      svg {
+        color: grey;
+      }
+    }
+  }
+
+  .container {
+    margin: 0;
+    min-width: -webkit-fill-available;
+  }
+
+  .topbar-menu-btn {
+    button {
+      background-color: v.$color3;
+      border: none;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      --bs-btn-active-bg: v.$color3 !important;
+      &:hover {
+        svg {
+          color: v.$color1;
+        }
+      }
+    }
+  }
+
+  
+}

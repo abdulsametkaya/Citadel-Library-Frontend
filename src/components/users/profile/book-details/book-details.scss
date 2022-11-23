@@ -1,0 +1,73 @@
+@use "../../../../assets/scss/mixins" as m;
+@use "../../../../assets/scss/variables" as v;
+
+.book-list-container {
+  background-image: url("../../books/book-details/old-book-open-dark-wood-background.jpg");
+  background-position: center;
+  box-shadow: 0 0 0.5rem 0.2rem grey;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-right: 0.5rem solid v.$color1;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  @media (max-width: 478px) {
+    background-image: none;
+  }
+
+  .detail-parent-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 2rem;
+
+    img {
+      height: 20rem;
+      width: 17rem;
+      object-fit: fill;
+
+      @media (max-width: 478px) {
+        display: none;
+      }
+    }
+  }
+
+  .details-row {
+    flex: 1;
+    align-items: start;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0;
+
+    @media (max-width: 478px) {
+      flex: 5;
+    }
+
+    .details-input {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem;
+
+      .details-first {
+        flex: 3;
+        color: brown;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: start;
+      }
+
+      .details-last {
+        flex: 4;
+        color: black;
+        text-align: start;
+      }
+    }
+  }
+}

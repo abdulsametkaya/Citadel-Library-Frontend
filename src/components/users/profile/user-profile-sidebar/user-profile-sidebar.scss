@@ -1,0 +1,115 @@
+@use "../../../../assets/scss/variables" as v;
+@use "../../../../assets/scss/mixins" as m;
+
+.sidebar-div{
+  height: 100%;
+}
+
+.user-sidebar {
+  box-shadow: 0.1rem 0.5rem 0.5rem grey;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  height: 100%;
+  
+
+  @media (max-width: 992px) {
+    
+    align-items: flex-start !important;
+  }
+  @media (min-width: 992px) {
+    align-items: flex-start !important;
+  }
+ 
+  .container {
+    @media (min-width: 992px) {
+      padding: 0;
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+
+    .navbar-brand {
+      img {
+        padding: 1.5rem;
+        @media (max-width: 992px) {
+          width: 200px;
+          height: auto;
+        }
+      }
+    }
+    .navbar-collapse {
+     
+      display: block !important;
+      width: 100%;
+    }
+
+    .navbar-nav {
+      flex-direction: column !important;
+      margin-top: 1rem;
+
+      @media (min-width: 992px) {
+       
+      }
+    }
+
+    .nav-link {
+      padding: 1rem 0 !important;
+      font-size: small !important;
+      display: flex;
+      direction: row;
+      margin-bottom: .5rem;
+      span{
+        font-size: 1rem;
+        margin-left: 0.8rem;
+      }
+      svg {
+        color: v.$color2;
+        margin-right: 0.5rem;
+        font-size: 1.3rem;
+        margin-left: 1rem;
+      }
+
+      &:hover {
+        background-color: v.$color4;
+      }
+    }
+
+    .btn-logout {
+      color: red;
+              svg {
+          color: red;
+        }
+      &:hover {
+        color: red;
+        svg {
+          color: red;
+        }
+      }
+    }
+
+    .active-elm {
+      background-color: #ffbf003d;
+      border-right: 4px solid v.$color1;
+    }
+
+  }
+}
+
+.side-short {
+  .user-sidebar {
+    width: 3rem;
+  }
+  .navbar-nav {
+    span {
+      display: none;
+      -webkit-transition: all 0.5s;
+    }
+    .nav-link {
+      &:hover {
+        background-color: v.$color5;
+      }
+    }
+  }
+
+  
+}
+ 

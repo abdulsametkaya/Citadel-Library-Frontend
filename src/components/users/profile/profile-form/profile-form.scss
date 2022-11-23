@@ -1,0 +1,41 @@
+@use "../../../../assets/scss/variables" as v;
+@use "../../../../assets/scss/mixins" as m;
+
+.container-form {
+  margin: 0;
+  max-width: none !important;
+  padding: auto;
+
+  .row-form {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form-control-profile {
+    font-weight: 400;
+    color: v.$color2 !important;
+    background-color: v.$color3;
+    background-clip: padding-box;
+
+    &:hover {
+      background-color: v.$color4 !important;
+    }
+  }
+}
+
+.user-information-table {
+  box-shadow: 0 0 0.5rem 0.2rem grey;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border-right: 0.5rem solid v.$color1;
+
+  .rdt_TableRow {
+    .cat-edit-btn {
+      padding: 0.2rem 2rem;
+    }
+  }
+
+  .rdt_TableHeadRow {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,59 @@
+@use "../../../../assets/scss/variables" as v;
+@use "../../../../assets/scss/mixins" as m;
+
+.user-dashboard-menu {
+ .profile-name{
+  color: v.$color1;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+ }
+  button {
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: v.$color3;
+    background: none !important;
+    border-radius: 0;
+
+    &:hover {
+      color: v.$color1;
+      background: v.$color1 !important;
+    }
+
+    @media (max-width: 991px) {
+      border: none;
+      padding: 0;
+      font-weight: 500;
+      color: v.$color1;
+      display: block;
+      text-align: left;
+
+      &:hover {
+        background: none !important;
+        color: v.$color3;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    background: none;
+    color: v.$color2;
+    border-radius: 0;
+    border-color: v.$color1;
+    background-color: rgb(255, 192, 0, 0.1);
+
+    .dropdown-divider {
+      background-color: v.$color1;
+      margin: 0;
+    }
+
+    @media (max-width: 991px) {
+      position: static;
+      border: none;
+      margin: 0;
+      padding: 0;
+      background: none;
+    }
+  }
+}

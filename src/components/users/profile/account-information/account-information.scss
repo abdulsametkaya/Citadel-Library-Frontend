@@ -1,0 +1,11 @@
+@use "../../../../assets/scss/variables" as v;
+
+.container-account {
+  margin: 0;
+  max-width: none !important;
+
+  .row-form {
+    display: flex;
+    justify-content: space-around;
+  }
+}
