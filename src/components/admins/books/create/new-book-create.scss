@@ -1,0 +1,39 @@
+@use "../../../../assets/scss/variables" as v;
+.book-create-container {
+  box-shadow: 0 0 0.5rem 0.2rem grey;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+  border-right: 0.5rem solid v.$color1;
+  form {
+    padding: 2rem;
+
+    .image-area {
+      background-color: #ececec;
+      position: relative;
+      border-radius: 2rem;
+      padding-top: 0.7rem;
+
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.8;
+      }
+
+      .image-area-error {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        border-radius: 2rem;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

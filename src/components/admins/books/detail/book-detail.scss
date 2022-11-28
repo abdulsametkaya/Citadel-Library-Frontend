@@ -1,0 +1,40 @@
+.admin-book-list-container {
+  form {
+    padding: 2rem;
+    .form-label{
+      font-weight: 600;
+    }
+    .image-area {
+      .image-area {
+        background-color: #ececec;
+        position: relative;
+        padding-top: 0.7rem;
+
+        button {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 0.8;
+        }
+
+        .image-area-error {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        img {
+          height: 80%;
+          width: auto;
+          border-radius: none !important;
+        }
+      }
+    }
+
+    .loan-area {
+      margin-top: 2rem;
+    }
+  }
+}

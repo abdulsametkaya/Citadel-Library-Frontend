@@ -1,0 +1,17 @@
+.dash-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  @media (max-width: 576px) {
+    width: 80% !important;
+    img {
+      width: 15vw !important;
+    }
+  }
+  .dash-row {
+    .dash-col {
+      margin-bottom: 2rem;
+      max-height: 10rem;
+    }
+  }
+}

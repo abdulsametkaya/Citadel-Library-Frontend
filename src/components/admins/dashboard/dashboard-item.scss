@@ -1,0 +1,46 @@
+@use "../../../assets/scss/variables" as v;
+
+.dashboard-item {
+  
+  &:hover {
+    background-color: v.$color4;
+     border-radius: 0.5rem !important;
+  }
+  .dashboard-item-card {
+    align-items: center;
+    flex-direction: row !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0.1rem 0.1rem 0.5rem grey;
+    padding: 1rem !important;
+    
+    img {
+      width: 5vw;
+      height: auto;
+      border-radius: 0 !important;
+      opacity: 0.5;
+    }
+
+    .dashboard-item-card-body {
+      text-align: right !important;
+      .card-title {
+        font-weight: bold;
+      }
+
+      .card-text {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+/*
+background-color:rgba(0, 85, 255, 0.3) !important; blue
+  background-color:rgba(0, 255, 217, 0.3) !important;
+  background-color:rgba(60, 255, 0, 0.3) !important;
+  background-color:rgba(255, 234, 0, 0.3) !important;
+  background-color:rgba(255, 72, 0, 0.3) !important;
+  background-color:rgba(234, 0, 255, 0.3) !important;
+  background-color:rgba(0, 255, 140, 0.3) !important;
+  background-color:rgba(255, 0, 89, 0.3) !important;
+
+*/
