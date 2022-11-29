@@ -1,0 +1,19 @@
+@use "../../../assets/scss/variables" as v;
+.unreturn-table{
+ box-shadow:0 0 0.5rem 0.2rem grey;
+ border-radius: 0.5rem;
+   text-align: center;
+  padding: 1rem;
+  border-right: 0.5rem solid v.$color1;
+ &::before{
+  content:"UNRETURNED BOOKS";
+  font-weight: bold;
+  font-size: 1.5rem;
+   border-bottom: 1rem solid v.$color1;
+
+ }
+
+ .rdt_TableHeadRow{
+  font-weight: bold;
+ }
+}

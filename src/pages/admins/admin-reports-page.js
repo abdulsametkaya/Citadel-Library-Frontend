@@ -1,17 +1,16 @@
 import React from "react";
 import AdminSection from "../../components/admins/common/admin-section/admin-section";
-import Dashboard from "../../components/admins/dashboard/dashboard";
+import Reports from "../../components/admins/reports/reports";
 import Spacer from "../../components/common/spacer/spacer";
 
-const AdminDashboardPage = () => {
+const AdminReportsPage = () => {
   return (
     <div>
       <Spacer height={"5vh"} />
-      <AdminSection title={"Dashboard"} />
-      <Spacer height={"5vh"} />
-      <Dashboard />
+      <AdminSection title={"Reports"} />
+      <Reports />
     </div>
   );
 };
 
-export default AdminDashboardPage;
+export default AdminReportsPage;

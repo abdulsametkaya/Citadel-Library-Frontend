@@ -1,0 +1,88 @@
+@use "../../../assets/scss/variables" as v;
+@use "../../../assets/scss/mixins" as m;
+
+.hstack {
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  .search-btn {
+  }
+
+  .user-search {
+    border: 2px solid #ced4da !important;
+    box-shadow: 0 0 0.5rem 0.1rem grey;
+  }
+}
+
+.user-table {
+  box-shadow: 0 0 0.5rem 0.2rem grey;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-right: 0.5rem solid v.$color1;
+
+  .rdt_TableRow {
+    .user-edit-btn {
+      padding: 0.4rem 1.5rem;
+      border-radius: 0.8rem;
+    }
+
+    .user-del-btn {
+      padding: 0.4rem 1.2rem;
+      border-radius: 0.8rem;
+      background-color: white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #dc3545;
+        color: v.$color2;
+
+        svg {
+          color: white;
+        }
+      }
+
+      svg {
+        color: #dc3545;
+      }
+    }
+  }
+
+  .rdt_TableHeadRow {
+    font-weight: bold;
+  }
+}
+
+.admin-user-modal {
+  .modal-body {
+    padding: 2rem !important;
+    ul {
+      @include m.flexbox(row, flex-start, flex-start, 1.5rem);
+    }
+    .nav-tabs {
+      --bs-nav-tabs-link-active-border-color: #ffc000 #ffc000 #ffc000;
+      --bs-nav-tabs-border-width: 0.1rem;
+      --bs-nav-tabs-border-color: #ffc000;
+      .nav-link {
+        padding: 0.7rem;
+      }
+    }
+  }
+  input {
+    padding: 0.7rem;
+  }
+
+  .mb-3 {
+    width: 95%;
+  }
+
+  .modal-header {
+    background-color: v.$color1;
+    .modal-title {
+      .btn-close:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

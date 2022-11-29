@@ -1,0 +1,50 @@
+@use "../../../assets/scss/variables" as v;
+
+.reports-container {
+  .reports-row {
+    border-radius: 0.5rem;
+    border: 0.1rem solid v.$color4;
+    box-shadow: 0 0 0.5rem 0.2rem grey;
+    padding-bottom: 2rem;
+    border-right: 0.5rem solid v.$color1;
+    gap: 1rem;
+    justify-content: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 576px) {
+      border-left: none;
+      border-top: 1rem solid v.$color1;
+      border-radius: 1rem;
+      span {
+        font-size: 1.5rem;
+        justify-content: center !important;
+        font-weight: bold;
+        margin-left: 1rem;
+      }
+    }
+    .reports-col-pie {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      canvas {
+        width: auto !important;
+      }
+    }
+    .reports-col-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      canvas {
+        width: auto !important;
+      }
+    }
+  }
+}
